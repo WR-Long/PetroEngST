@@ -19,11 +19,7 @@ import streamlit as st
 
 import json
 
-try:
-    import PetroEng as pe
-except:
-    subprocess.run([f'{sys.executable} -m pip install git+https://github.com/WR-Long/PetroEng'], shell=True)
-    import PetroEng as pe
+import PetroEng as pe
 from PetroEng.convert import UoMdict
 
 UoM = UoMdict()
